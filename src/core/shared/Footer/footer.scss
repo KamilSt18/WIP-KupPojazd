@@ -1,0 +1,15 @@
+.footer {
+    background-color: rgba(0, 0, 0, 0.01);
+}
+.footer .copyright {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: rgb(167, 172, 176);
+  font-weight: 400;
+  font-size: 13px;
+  --bs-gutter-x: 0.5rem;
+}
+.footer .copyright span {
+    font-weight: 500;
+}
