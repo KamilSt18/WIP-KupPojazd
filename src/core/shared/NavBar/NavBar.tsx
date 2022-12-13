@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import clsx from "clsx";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import "./nav-bar.scss"
-import { faCar } from "@fortawesome/free-solid-svg-icons"
+import logo from '../../images/logo.svg'
+
 
 import { NavLink } from "react-router-dom"
 
@@ -15,11 +15,7 @@ const NavBar = (props: Props) => {
 		<nav className="sticky-top navbar navbar-expand-xl navbar-light bg-white shadow menu-border">
 			<div className="container">
 				<NavLink to={"/"} className="navbar-brand">
-					<div className="logo">
-						<FontAwesomeIcon icon={faCar} className="me-1 logo-car" />
-						<span>Kup</span>
-						<span>POJAZD</span>
-					</div>
+					<img src={logo} alt="Logo" className="logo" />
 				</NavLink>
 				<button className="navbar-toggler" type="button" onClick={() => setOpen(!open)}>
 					<span className="navbar-toggler-icon"></span>
