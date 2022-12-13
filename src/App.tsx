@@ -1,5 +1,5 @@
 import React from "react"
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom"
 import "./App.scss"
 
 // Components
@@ -17,17 +17,21 @@ type Props = {}
 
 const App = (props: Props) => {
 	return (
-		<>
-			<NavBar />
-			<Routes>
-              <Route path="/" element={<HomepageView />} />
-              <Route path="/results" element={<ResultsView />} />
-              <Route path="/details" element={<DetailsView />} />
-              <Route path="/authentication" element={<AuthenticationView />} />
-              <Route path="*" element={<ErrorPage />} />
-            </Routes>
-			<Footer />
-		</>
+		<div className="p-0 container-fluid">
+			<div className="m-0 row justify-content-center">
+				<NavBar />
+				<div className="col-xl-10">
+					<Routes>
+						<Route path="/" element={<HomepageView />} />
+						<Route path="/results" element={<ResultsView />} />
+						<Route path="/details" element={<DetailsView />} />
+						<Route path="/authentication" element={<AuthenticationView />} />
+						<Route path="*" element={<ErrorPage />} />
+					</Routes>
+				</div>
+				<Footer />
+			</div>
+		</div>
 	)
 }
 

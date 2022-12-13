@@ -5,9 +5,9 @@ import { NavLink } from "react-router-dom"
 import "./footer.scss"
 import { faCar, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
 import {
-  faFacebook,
-	faInstagram,
-	faTwitter,
+	faAppStore,
+	faFacebook,
+	faGooglePlay,
 	faYoutube,
 } from "@fortawesome/free-brands-svg-icons"
 
@@ -19,7 +19,9 @@ const Footer = (props: Props) => {
 			<div className="mx-auto col-10">
 				<section className="p-4 d-flex justify-content-center justify-content-xl-between border-bottom">
 					<div className="me-5 d-none d-xl-block">
-						<span>Dołącz do nas w mediach społecznościowych:</span>
+						<span>
+							Dołącz do nas w mediach społecznościowych i innych platformach:
+						</span>
 					</div>
 					<div>
 						<NavLink to={"/"} className="me-4 text-reset">
@@ -29,10 +31,10 @@ const Footer = (props: Props) => {
 							<FontAwesomeIcon icon={faYoutube} />
 						</NavLink>
 						<NavLink to={"/"} className="me-4 text-reset">
-							<FontAwesomeIcon icon={faTwitter} />
+							<FontAwesomeIcon icon={faGooglePlay} />
 						</NavLink>
 						<NavLink to={"/"} className="me-4 text-reset">
-							<FontAwesomeIcon icon={faInstagram} />
+							<FontAwesomeIcon icon={faAppStore} />
 						</NavLink>
 					</div>
 				</section>
@@ -69,7 +71,8 @@ const Footer = (props: Props) => {
 
 			<div className="footer text-center p-4">
 				<div className="copyright">
-					<span>KupPOJAZD.pl © {new Date().getFullYear()}</span> | Wszelkie prawa zastrzeżone
+					<span>KupPOJAZD.pl © {new Date().getFullYear()}</span> | Wszelkie
+					prawa zastrzeżone
 				</div>
 			</div>
 		</footer>
