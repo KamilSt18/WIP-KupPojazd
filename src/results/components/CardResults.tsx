@@ -1,10 +1,14 @@
 import React from "react"
+import { useNavigate } from "react-router-dom"
 
 type Props = {}
 
 const CardResults = (props: Props) => {
+	const navigate = useNavigate();
 	return (
-		<div className="my-3 card" style={{ cursor: "pointer" }}>
+		<div className="my-3 card" style={{ cursor: "pointer" }} onClick={() => {
+			navigate('/details')
+		}}>
 			<div className="g-0 row">
 				<div className="col-md-4">
 					<img
