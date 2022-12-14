@@ -1,0 +1,37 @@
+.results-alert {
+    border: 1px solid #e5e5e5;
+    padding: 1.5rem;
+    border-left-width: 8px;
+    border-left-color: #6c757d;
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+}
+.results-alert > div span {
+    font-weight: 700;
+    font-size: 18px;
+}
+.results-message {
+    // border: 1px solid #e5e5e5;
+    padding: 0.5rem;
+}
+.results-message > span {
+    font-weight: bold;
+}
+
+a.page-link {
+    color: black;
+}
+//  Karta
+.card-text .vehicle-price {
+    font-size: 22px;
+    color: #c81f1f;
+    font-weight: 500;
+  }
+ul.car-attributes-list {
+  display: flex;
+  list-style: none;
+}
+
+ul.car-attributes-list li {
+    margin-inline: 0 1rem;
+}
