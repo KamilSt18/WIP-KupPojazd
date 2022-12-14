@@ -1,9 +1,15 @@
 /* make the customizations */
+$primary: #1a60a5;
+$danger: #d22b27;
 
 /* import bootstrap to set changes */
 @import "~bootstrap/scss/bootstrap";
 
 /* custom global styles */
 body {
-    background-color: rgba(0, 0, 0, 0.01);
+	background-color: rgba(0, 0, 0, 0.01);
+}
+
+.react-tabs__tab--selected {
+	color: $primary;
 }

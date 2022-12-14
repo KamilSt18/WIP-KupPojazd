@@ -93,18 +93,18 @@ const NavBar = (props: Props) => {
 					</ul>
 					<div className="ms-auto d-none d-xl-flex align-items-center">
 						<span className="mx-xl-4 text-nowrap">
-							<NavLink to={"/"} className="text-decoration-none text-primary">
+							<NavLink to={"/authentication/login"} className="text-decoration-none text-primary">
 								Zaloguj się
 							</NavLink>
 							<span className="mx-2">/</span>
-							<NavLink to={"/"} className="text-decoration-none text-primary">
+							<NavLink to={"/authentication/register"} className="text-decoration-none text-primary">
 								Zarejestruj się
 							</NavLink>
 						</span>
 
-						<button type="button" className="btn btn-primary">
+						<NavLink to="/add-offer" className="btn btn-primary">
 							Dodaj ogłoszenie
-						</button>
+						</NavLink>
 					</div>
 				</div>
 			</div>

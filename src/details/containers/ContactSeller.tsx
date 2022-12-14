@@ -1,4 +1,4 @@
-import { faUser } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope, faMessage, faUser } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 
@@ -53,14 +53,14 @@ const ContactSeller = (props: Props) => {
 						placeholder="Treść wiadomości"></textarea>
 					<div className="d-grid">
 						<button type="button" className="mt-3 btn btn-outline-primary">
-							<i className="mx-2 fa-solid fa-envelope"></i>Wyślij
+							<FontAwesomeIcon icon={faEnvelope} className="mx-2" />Wyślij
 						</button>
 
 						<div className="my-3 strike">
 							<span>lub</span>
 						</div>
 						<button type="button" className="btn btn-danger">
-							<i className="mx-2 fa-solid fa-message"></i>Przejdz do chatu z
+							<FontAwesomeIcon icon={faMessage} className="mx-2" />Przejdz do chatu z
 							użytkownikiem
 						</button>
 					</div>

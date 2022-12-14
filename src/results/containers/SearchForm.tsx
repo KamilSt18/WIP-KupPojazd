@@ -68,6 +68,15 @@ const SearchForm = (props: Props) => {
 				</div>
 
 				<div className="col-12">
+					<label htmlFor="city" className="mb-2 search-form-text">
+						Miejscowość
+					</label>
+					<select name="city" id="city" className="form-select ">
+						<option>Wybierz...</option>
+					</select>
+				</div>
+
+				<div className="col-12">
 					<label className="mb-2 search-form-text">Cena [PLN]</label>
 					<div className="row">
 						<div className="col">
@@ -131,15 +140,6 @@ const SearchForm = (props: Props) => {
 							/>
 						</div>
 					</div>
-				</div>
-
-				<div className="col-12">
-					<label htmlFor="city" className="mb-2 search-form-text">
-						Miejscowość
-					</label>
-					<select name="city" id="city" className="form-select ">
-						<option>Wybierz...</option>
-					</select>
 				</div>
 
       <div className="d-grid">

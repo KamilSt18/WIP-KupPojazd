@@ -1,3 +1,5 @@
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react"
 import { useNavigate } from "react-router-dom"
 
@@ -28,7 +30,7 @@ const CardResults = (props: Props) => {
 							<span className="vehicle-price">138 500 PLN</span>
 						</p>
 						<p className="card-text">
-							<i className="fa-solid fa-location-dot"></i>Wrocław
+							<FontAwesomeIcon icon={faLocationDot} /> Wrocław
 						</p>
 						<ul className="p-0 m-0 car-attributes-list">
 							<li>2002</li>

@@ -33,7 +33,7 @@ const DetailsView = (props: Props) => {
 						</div>
 						<div className="col">
 							<p className="me-1 h5 card-text d-flex justify-content-end">
-								<FontAwesomeIcon icon={faLocationDot} className="me-2" />Wrocław
+								<FontAwesomeIcon icon={faLocationDot} className="me-1 text-primary" />Wrocław
 							</p>
 						</div>
 					</div>
