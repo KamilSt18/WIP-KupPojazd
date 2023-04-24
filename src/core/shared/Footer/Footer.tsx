@@ -71,7 +71,7 @@ const Footer = (props: Props) => {
 
 			<div className="footer text-center p-4">
 				<div className="copyright">
-					<span>KupPOJAZD.pl © {new Date().getFullYear()}</span> | Wszelkie
+					<span><b>KupPOJAZD.pl</b> © {new Date().getFullYear()}</span> | Wszelkie
 					prawa zastrzeżone
 				</div>
 			</div>

@@ -1,23 +1,32 @@
 import React, { useState } from "react"
-import clsx from "clsx";
+import clsx from "clsx"
 
 import "./nav-bar.scss"
-import logo from '../../images/logo.svg'
-
+import logo from "../../images/logo.svg"
 
 import { NavLink } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faPlus } from "@fortawesome/free-solid-svg-icons"
 
 type Props = {}
 
 const NavBar = (props: Props) => {
-	const [open, setOpen] = useState(false);
+	const [open, setOpen] = useState(false)
+	const addOfferButton = (
+		<NavLink to="/add-offer" className="btn btn-primary btn-add" >
+			<FontAwesomeIcon icon={faPlus} /> Nowe ogłoszenie
+		</NavLink>
+	)
 	return (
 		<nav className="sticky-top navbar navbar-expand-xl navbar-light bg-white shadow menu-border">
 			<div className="container">
 				<NavLink to={"/"} className="navbar-brand">
 					<img src={logo} alt="Logo" className="logo" />
 				</NavLink>
-				<button className="navbar-toggler" type="button" onClick={() => setOpen(!open)}>
+				<button
+					className="navbar-toggler"
+					type="button"
+					onClick={() => setOpen(!open)}>
 					<span className="navbar-toggler-icon"></span>
 				</button>
 				<div className={clsx("collapse navbar-collapse", open && "show")}>
@@ -86,25 +95,25 @@ const NavBar = (props: Props) => {
 						</li>
 
 						<li className="d-xl-none my-2 nav-item">
-							<button type="button" className="btn btn-primary">
-								Dodaj ogłoszenie
-							</button>
+							{addOfferButton}
 						</li>
 					</ul>
 					<div className="ms-auto d-none d-xl-flex align-items-center">
 						<span className="mx-xl-4 text-nowrap">
-							<NavLink to={"/authentication/login"} className="text-decoration-none text-primary">
+							<NavLink
+								to={"/authentication/login"}
+								className="text-decoration-none text-primary">
 								Zaloguj się
 							</NavLink>
 							<span className="mx-2">/</span>
-							<NavLink to={"/authentication/register"} className="text-decoration-none text-primary">
+							<NavLink
+								to={"/authentication/register"}
+								className="text-decoration-none text-primary">
 								Zarejestruj się
 							</NavLink>
 						</span>
 
-						<NavLink to="/add-offer" className="btn btn-primary">
-							Dodaj ogłoszenie
-						</NavLink>
+						{addOfferButton}
 					</div>
 				</div>
 			</div>

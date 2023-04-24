@@ -29,5 +29,12 @@ export const mockCars: Car[] = [
       price: '67 900',
       img: 'https://columbauto.pl/upload/iblock/2e9/2e9a8903ffcf99d7f07d676303794a45.JPG',
       condition: 'Używany'
+    }, {
+      id: 4,
+      title: "BMW 435 Gran Coupe i xDrive",
+      mileage: "546 423",
+      price: "138 500",
+      img: "https://platform.cstatic-images.com/xlarge/in/v2/a70e4473-c609-5cf8-8208-6c8dae4d41fb/70c39aba-6947-40ad-951f-0c4d70a95f7b/rzjAQwbeCrmRPSsVWuaP_MbcPps.jpg",
+      condition: "Używany",
     }
   ];
